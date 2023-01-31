@@ -1,0 +1,183 @@
+{
+    "1":{
+        "id":1,
+        "description":"Home Page",
+        "options":[
+            {
+                "id":1,
+                "description":"Mobile Recharge",
+                "nextId":"11"
+            },
+            {
+                "id":2,
+                "description":"DTH",
+                "nextId":"21"
+            },
+            {
+                "id":3,
+                "description":"Exit",
+                "nextId":"0"
+            }
+        ],
+        "validChoice":[1,3]
+    },
+    "11":{
+        "id":11,
+        "description":"Mobile Recharge Page",
+        "options":[
+            {
+                "id":1,
+                "description":"Prepaid",
+                "nextId":"111"
+            },
+            {
+                "id":2,
+                "description":"Postpaid",
+                "nextId":"111"
+            },
+            {
+                "id":3,
+                "description":"Back to Main Menu",
+                "nextId":"-2"
+            }
+        ],
+        "validChoice":[1,3]
+    },
+    "111":{
+        "id":111,
+        "description":"Select Services Provider",
+        "options":[
+            {
+                "id":1,
+                "description":"Airtel",
+                "nextId":"99"
+            },
+            {
+                "id":2,
+                "description":"Aircel",
+                "nextId":"99"
+            },
+            {
+                "id":3,
+                "description":"Jio",
+                "nextId":"99"
+            },
+            {
+                "id":4,
+                "description":"Vodafone",
+                "nextId":"99"
+            },
+            {
+                "id":5,
+                "description":"Back",
+                "nextId":"-1"
+            },
+            {
+                "id":6,
+                "description":"Back to Main Menu",
+                "nextId":"-2"
+            }
+        ],
+        "validChoice":[1,6]
+
+    },
+    "21":{
+        "id":21,
+        "description":"Select DTH Provider",
+        "options":[
+            {
+                "id":1,
+                "description":"Sun Direct",
+                "nextId":"99"
+            },
+            {
+                "id":2,
+                "description":"TATA Sky",
+                "nextId":"99"
+            },
+            {
+                "id":3,
+                "description":"Airtel DTH",
+                "nextId":"99" 
+            },
+            {
+                "id":4,
+                "description":"Reliance Digital Tv",
+                "nextId":"99"
+            },
+            {
+                "id":5,
+                "description":"Aircel DTH",
+                "nextId":"99"
+            },
+            {
+                "id":6,
+                "description":"Back to Main Menu",
+                "nextId":"-2"
+            }
+        ],
+        "validChoice":[1,6]
+    },
+    "99":{
+        "id":99,
+        "description":"Recharge Page",
+        "options":[
+            {
+                "id":1,
+                "description":"To Enter the Recharge No",
+                "nextId":"100"
+            },
+            {
+                "id":2,
+                "description":"Back",
+                "nextId":"-1"
+            },
+            {
+                "id":3,
+                "description":"Back to Main Menu",
+                "nextId":"-2"
+            }
+        ],
+        "validChoice":[1,3]
+    },
+    "100":{
+        "id":100,
+        "description":"Recharge Successfull!Thank you for Recharging with us :)",
+        "options":[
+            {
+                "id":1,
+                "description":"Back to Main Menu",
+                "nextId":"-2"
+            },
+            {
+                "id":2,
+                "description":"Exit",
+                "nextId":"0"
+            }
+
+        ],
+        "validChoice":[1,2]
+    },
+    "0":{
+        "id":0,
+        "description":"Exit",
+        "nextId":null,
+        "options":[],
+        "validChoice":[]
+    },
+    "-2":{
+        "id":-2,
+        "description":"Back to Main Menu",
+        "nextId":null,
+        "options":[],
+        "validChoice":[]
+    },
+    "-1":{
+        "id":-1,
+        "description":"Go Back",
+        "nextId":null,
+        "options":[],
+        "validChoice":[]
+    }
+
+}
